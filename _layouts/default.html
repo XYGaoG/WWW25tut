@@ -18,6 +18,22 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    <!-- 渲染作者列表 -->
+    <p>
+      {% assign affiliations = "" | split: "" %}
+      {% for author in page.authors %}
+        {{ author.name }}<sup>{{ forloop.index }}</sup>{% if forloop.last == false %}, {% endif %}
+        {% assign affiliations = affiliations | push: author.affiliation %}
+      {% endfor %}
+    </p>
+    <!-- 渲染单位列表 -->
+    <p>
+      {% for affiliation in affiliations %}
+        <sup>{{ forloop.index }}</sup>{{ affiliation }}{% if forloop.last == false %}; {% endif %}
+      {% endfor %}
+    </p>
+
+      
 <!--       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %} -->

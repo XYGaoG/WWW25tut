@@ -33,6 +33,8 @@ Graph data is extensively utilized across various domains, owing to its capacity
 In response to this trend, this tutorial provides a comprehensive and up-to-date overview of GC research. It systematically categorizes existing studies into five categories aligned with critical GC evaluation criteria: effectiveness, generalization, efficiency, fairness, and robustness. Additionally, we will provide an in-depth analysis of two fundamental components of GC: optimization strategies and condensed graph generation, elucidating their key characteristics and underlying technologies. Finally, this tutorial will explore GC applications across various fields and outline potential directions for future research in this rapidly evolving and impactful domain.
 </div>
 
+<hr style="border-top: 1px solid #ccc; margin: 20px 0;">
+
 
 ## Outline
 
@@ -62,6 +64,8 @@ This is a lecture-style tutorial that includes:
 **Section 6: Conclusion and Open Discussions (20 mins)**
 
 
+<hr style="border-top: 1px solid #ccc; margin: 20px 0;">
+
 
 ## Presenter
 
@@ -89,6 +93,8 @@ This is a lecture-style tutorial that includes:
 
 </ul>
 </div>
+
+<hr style="border-top: 1px solid #ccc; margin: 20px 0;">
 
 
 ## Our Papers on Graph Condensation

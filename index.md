@@ -28,23 +28,20 @@ authors:
 </style>
 
 ## Introduction
-<div style="display: flex; align-items: center; justify-content: space-between;">
+
+<div style="position: relative; display: flex; align-items: flex-start;">
     <!-- 左侧文本 -->
-    <div style="flex: 1; text-align: justify; padding-right: 20px; max-width: 50%;">
-        Graph data is extensively utilized across various domains, owing to its capacity to represent complex structural relationships among diverse real-world entities. However, the rapid expansion of graph data introduces significant challenges in terms of storage, transmission, and the training of graph neural networks (GNNs) for effective graph data analysis. 
-
-        In light of these challenges, graph condensation (GC) has emerged as a data-centric solution, synthesizing a compact yet representative graph to replace the original large graph in GNN training. These GNNs trained on condensed graphs can achieve performance comparable to models trained on full-scale data, attracting substantial attention and stimulating extensive research.
-
-        In response to this trend, this tutorial provides a comprehensive and up-to-date overview of GC research. It systematically categorizes existing studies into five categories aligned with critical GC evaluation criteria: effectiveness, generalization, efficiency, fairness, and robustness. Additionally, we will provide an in-depth analysis of two fundamental components of GC: optimization strategies and condensed graph generation, elucidating their key characteristics and underlying technologies. 
-
-        Finally, this tutorial will explore GC applications across various fields and outline potential directions for future research in this rapidly evolving and impactful domain.
+    <div style="flex: 1; text-align: justify; padding-right: 20px;">
+Graph data is extensively utilized across various domains, owing to its capacity to represent complex structural relationships among diverse real-world entities. However, the rapid expansion of graph data introduces significant challenges in terms of storage, transmission, and the training of graph neural networks (GNNs) for effective graph data analysis. In light of these challenges, graph condensation (GC) has emerged as a data-centric solution, synthesizing a compact yet representative graph to replace the original large graph in GNN training. These GNNs trained on condensed graphs can achieve performance comparable to models trained on full-scale data, attracting substantial attention and stimulating extensive research.
+In response to this trend, this tutorial provides a comprehensive and up-to-date overview of GC research. It systematically categorizes existing studies into five categories aligned with critical GC evaluation criteria: effectiveness, generalization, efficiency, fairness, and robustness. Additionally, we will provide an in-depth analysis of two fundamental components of GC: optimization strategies and condensed graph generation, elucidating their key characteristics and underlying technologies. Finally, this tutorial will explore GC applications across various fields and outline potential directions for future research in this rapidly evolving and impactful domain.
     </div>
 
-    <!-- 右侧图片 -->
-    <div style="flex-shrink: 0; max-width: 50%;">
+    <!-- 右上角图片 -->
+    <div style="position: absolute; right: 0; top: 0; max-width: 40%;">
         <img src="main.jpg" alt="GC" width="100%">
     </div>
 </div>
+
 
 
 <hr style="border-top: 1px solid #eee; margin: 40px 0 20px 0;">

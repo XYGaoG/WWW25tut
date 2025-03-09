@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Graph Condensation: Foundations
+title: Another page
 description: WWW 2025 Tutorial
 ---
 

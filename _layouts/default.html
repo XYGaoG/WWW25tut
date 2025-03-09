@@ -2,8 +2,9 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-<!-- 在页面顶部，初始化 affiliations 数组 -->
+<!-- 初始化 affiliations 数组 -->
 {% assign affiliations = "" | split: "" %}
+
     
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,22 +25,29 @@
       
 
 
-<!-- 显示作者列表和对应的单位上标 -->
+
+<!-- 遍历所有作者，收集唯一的单位 -->
+{% for author in page.authors %}
+  {% unless affiliations contains author.affiliation %}
+    {% assign affiliations = affiliations | push: author.affiliation %}
+  {% endunless %}
+{% endfor %}
+
+<!-- 显示作者列表，正确匹配单位索引 -->
 <p style="font-size: 16px;">
   {% for author in page.authors %}
-    {% unless affiliations contains author.affiliation %}
-      {% assign affiliations = affiliations | push: author.affiliation %}
-    {% endunless %}
-    {{ author.name }}<sup>{{ affiliations | index_of: author.affiliation | plus: 1 }}</sup>{% unless forloop.last %}, {% endunless %}
+    {% assign aff_index = affiliations | index_of: author.affiliation | plus: 1 %}
+    {{ author.name }}<sup>{{ aff_index }}</sup>{% unless forloop.last %}, {% endunless %}
   {% endfor %}
 </p>
 
-<!-- 渲染单位列表，为每个单位分配一个数字上标 -->
+<!-- 渲染单位列表 -->
 <p style="font-size: 16px;">
   {% for affiliation in affiliations %}
     <sup>{{ forloop.index }}</sup>{{ affiliation }}{% unless forloop.last %}; {% endunless %}
   {% endfor %}
 </p>
+
 
       
 <!--       {% if site.github.is_project_page %}

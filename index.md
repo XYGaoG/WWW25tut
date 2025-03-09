@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Graph Condensation: Foundations, Methods and Prospects
+description: WWW 2025 Tutorial
 ---
 
 

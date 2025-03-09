@@ -107,7 +107,7 @@ This is a lecture-style tutorial that includes:
 <ul style="list-style: none; padding-left: 0; font-size: smaller;">
     <li style="margin-bottom: 5px;">
         <strong><a href="https://arxiv.org/abs/2401.11720v2">Graph Condensation: A Survey</a></strong> 
-        <a href="https://github.com/XYGaoG/Graph-Condensation-Papers">[📖]</a><br>
+        <a href="https://github.com/XYGaoG/Graph-Condensation-Papers">📖</a><br>
         <em>Transactions on Knowledge and Data Engineering (TKDE), 2025</em><br>
         Xinyi Gao, Junliang Yu, Tong Chen, Guanhua Ye, Wentao Zhang, Hongzhi Yin
     </li>

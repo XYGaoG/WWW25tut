@@ -4,20 +4,21 @@ title: "Graph Condensation: Foundations, Methods and Prospects"
 description: "WWW 2025 Tutorial"
 authors:
   - name: "Hongzhi Yin"
-    affiliation: "The University of Queensland, Brisbane, Australia"
+    affiliation: "The University of Queensland"
   - name: "Xinyi Gao"
-    affiliation: "The University of Queensland, Brisbane, Australia"
+    affiliation: "The University of Queensland"
   - name: "Junliang Yu"
-    affiliation: "The University of Queensland, Brisbane, Australia"
+    affiliation: "The University of Queensland"
   - name: "Ruihong Qiu"
-    affiliation: "The University of Queensland, Brisbane, Australia"
+    affiliation: "The University of Queensland"
   - name: "Tong Chen"
-    affiliation: "The University of Queensland, Brisbane, Australia"
+    affiliation: "The University of Queensland"
   - name: "Quoc Viet Hung Nguyen"
-    affiliation: "Griffith University, Gold Coast, Australia"
+    affiliation: "Griffith University"
   - name: "Zi Huang"
-    affiliation: "The University of Queensland, Brisbane, Australia"
+    affiliation: "The University of Queensland"
 ---
+
 
 <style>
   body {

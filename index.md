@@ -4,6 +4,11 @@ title: "Graph Condensation: Foundations, Methods and Prospects"
 description: WWW 2025 Tutorial
 ---
 
+<style>
+  body {
+    font-size: 14px; /* 根据需要调整字体大小 */
+  }
+</style>
 
 ## Introduction
 <div style="text-align: justify;">

@@ -2,7 +2,9 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-
+<!-- 在页面顶部，初始化 affiliations 数组 -->
+{% assign affiliations = "" | split: "" %}
+    
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
@@ -17,12 +19,13 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline" style="font-size: 16px;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h2 class="project-tagline" style="font-size: 24px;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
       
+
+
 <!-- 显示作者列表和对应的单位上标 -->
 <p style="font-size: 16px;">
-  {% assign affiliations = "" | split: "" %}
   {% for author in page.authors %}
     {% unless affiliations contains author.affiliation %}
       {% assign affiliations = affiliations | push: author.affiliation %}
@@ -37,6 +40,7 @@
     <sup>{{ forloop.index }}</sup>{{ affiliation }}{% unless forloop.last %}; {% endunless %}
   {% endfor %}
 </p>
+
       
 <!--       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>

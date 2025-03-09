@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Graph Condensation: Foundations, Methods and Prospects
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Graph Condensation: Foundations, Methods and Prospects
+title: "Graph Condensation: Foundations, Methods and Prospects"
 description: WWW 2025 Tutorial
 ---
 

@@ -17,11 +17,11 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h2 class="project-tagline" style="font-size: 16px;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
       
 <!-- 显示作者列表和对应的单位上标 -->
-<p>
+<p style="font-size: 16px;">
   {% assign affiliations = "" | split: "" %}
   {% for author in page.authors %}
     {% unless affiliations contains author.affiliation %}
@@ -32,7 +32,7 @@
 </p>
 
 <!-- 渲染单位列表，为每个单位分配一个数字上标 -->
-<p>
+<p style="font-size: 16px;">
   {% for affiliation in affiliations %}
     <sup>{{ forloop.index }}</sup>{{ affiliation }}{% unless forloop.last %}; {% endunless %}
   {% endfor %}

@@ -6,7 +6,7 @@ description: WWW 2025 Tutorial
 
 <style>
   body {
-    font-size: 14px; /* 根据需要调整字体大小 */
+    font-size: 12px; /* 根据需要调整字体大小 */
   }
 </style>
 

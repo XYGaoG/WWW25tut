@@ -18,25 +18,26 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <!-- 渲染作者列表 -->
-      <p>
-        {% assign affiliations = "" | split: "" %}
-        {% for author in page.authors %}
-          {% assign aff_index = affiliations | index_of: author.affiliation %}
-          {% if aff_index == -1 %}
-            {% assign affiliations = affiliations | push: author.affiliation %}
-            {% assign aff_index = affiliations | size | minus: 1 %}
-          {% endif %}
-          {{ author.name }}<sup>{{ aff_index | plus: 1 }}</sup>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
-      
-      <!-- 渲染机构列表 -->
-      <p>
-        {% for affiliation in affiliations %}
-          <sup>{{ forloop.index }}</sup>{{ affiliation }}{% unless forloop.last %}; {% endunless %}
-        {% endfor %}
-      </p>
+<!-- 显示作者列表和对应的单位 -->
+<p>
+  {% for author in page.authors %}
+    {{ author.name }}<sup>{{ author.affiliation }}</sup>{% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+</p>
+
+<!-- 生成并显示单位索引 -->
+<p>
+  {% assign affiliations = "" | split: "" %}
+  {% for author in page.authors %}
+    {% unless affiliations contains author.affiliation %}
+      {% assign affiliations = affiliations | push: author.affiliation %}
+    {% endunless %}
+  {% endfor %}
+
+  {% for affiliation in affiliations %}
+    <sup>{{ forloop.index }}</sup>{{ affiliation }}{% unless forloop.last %}; {% endunless %}
+  {% endfor %}
+</p>
 <!--       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %} -->

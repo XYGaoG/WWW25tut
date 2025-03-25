@@ -27,6 +27,14 @@ authors:
   }
 </style>
 
+## Session Schedule at WWW 2025
+
+**Time**: 09:00 – 10:30 (AEST, UTC+10)
+**Date**: Monday, April 28, 2025
+**Room**: C3.5
+**Venue**: ICC Sydney – International Convention & Exhibition Centre
+
+
 ## Introduction
 
 <div style="text-align: justify;">

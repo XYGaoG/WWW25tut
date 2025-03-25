@@ -27,7 +27,7 @@ authors:
   }
 </style>
 
-## Session Schedule at WWW 2025
+## Session Schedule
 
 **Time**: 09:00 – 10:30 (AEST, UTC+10)
 
@@ -37,6 +37,7 @@ authors:
 
 **Venue**: ICC Sydney – International Convention & Exhibition Centre
 
+<hr style="border-top: 1px solid #eee; margin: 40px 0 20px 0;">
 
 ## Introduction
 
